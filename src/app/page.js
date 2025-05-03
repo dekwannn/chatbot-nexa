@@ -210,7 +210,7 @@ export default function Home() {
   useEffect(() => {
     const welcomeMessage = {
       role: 'ai',
-      text: 'Halo! Saya Nexa, asisten AI yang siap membantu Anda dengan pertanyaan seputar pemrograman. Apa yang ingin Anda tanyakan?',
+      text: 'Halo! Saya Nexa, asisten AI yang siap membantu Anda. Apa yang ingin Anda tanyakan?',
       timestamp: new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })
     };
     setMessages([welcomeMessage]);
@@ -299,7 +299,7 @@ export default function Home() {
             </div>
             <h1 className="text-xl font-bold text-gray-900">Nexa</h1>
             <span className="bg-blue-100 text-blue-800 text-xs font-medium px-2 py-0.5 rounded-full">
-              AI Pemrograman
+              Asisten AI
             </span>
           </div>
           
@@ -349,7 +349,7 @@ export default function Home() {
                 value={input}
                 onChange={(e) => setInput(e.target.value)}
                 onKeyDown={handleKeyDown}
-                placeholder="Tanya Nexa tentang pemrograman..."
+                placeholder="Tanya Nexa tentang apapun..."
                 className="flex-1 resize-none border text-black border-gray-300 rounded-lg pl-4 pr-12 py-3 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent bg-white shadow-sm min-h-12 max-h-32"
                 rows={1}
               />
